@@ -1,6 +1,6 @@
 # Arch Linux Config Files
 
-Arch Linux configuration files mostly using [Catppuccin](https://catppuccin.com/) colors.
+[Hyprland](https://hypr.land/) & [Catppuccin](https://catppuccin.com/)
 
 <img width="1918" height="1080" alt="swappy-20251115-223556" src="https://github.com/user-attachments/assets/71d02bdd-f019-4f65-a281-1bbc62b09bb3" />
 
