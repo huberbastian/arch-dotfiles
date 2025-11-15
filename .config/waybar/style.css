@@ -1,0 +1,122 @@
+/**
+ * Catppucin Mocha Colors
+ **/
+@define-color rosewater #f5e0dc;
+@define-color flamingo  #f2cdcd;
+@define-color pink      #f5c2e7;
+@define-color mauve     #cba6f7;
+@define-color red       #f38ba8;
+@define-color maroon    #eba0ac;
+@define-color peach     #fab387;
+@define-color yellow    #f9e2af;
+@define-color green     #a6e3a1;
+@define-color teal      #94e2d5;
+@define-color sky       #89dceb;
+@define-color sapphire  #74c7ec;
+@define-color blue      #89b4fa;
+@define-color lavender  #b4befe;
+@define-color text      #cdd6f4;
+@define-color subtext1  #bac2de;
+@define-color subtext0  #a6adc8;
+@define-color overlay2  #9399b2;
+@define-color overlay1  #7f849c;
+@define-color overlay0  #6c7086;
+@define-color surface2  #585b70;
+@define-color surface1  #45475a;
+@define-color surface0  #313244;
+@define-color base      #1e1e2e;
+@define-color mantle    #181825;
+@define-color crust     #11111b;
+
+* {
+  font-family: JetBrainsMono Nerd Font, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+window#waybar {
+  background-color: transparent;
+}
+
+/* Base styles for all modules */
+#custom-launcher,
+#cpu,
+#memory,
+#temperature,
+#workspaces,
+#network,
+#wireplumber,
+#wireplumber-source,
+#tray,
+#clock {
+  background-color: @mantle;
+  color: @flamingo;
+  border: 2 solid @flamingo;
+  padding: 0 8;
+  margin: 4 0 2 0;
+  border-radius: 10;
+}
+
+#custom-launcher {
+  border: none;
+  background-color: @flamingo;
+  color: @mantle;
+  margin-left: 8;
+  padding-left: 14;
+  padding-right: 10;
+}
+
+#workspaces {
+  border: none;
+  background-color: transparent;
+}
+
+#workspaces button {
+  background-color: @mantle;
+  color: @flamingo;
+  padding: 1;
+  margin: 3 2;
+  border-radius: 12;
+  border: 2 solid @flamingo;
+}
+
+#workspaces button.active {
+  padding: 3;
+  border: none;
+  background-color: @flamingo;
+}
+
+#workspaces button.active label {
+  color: @mantle;
+}
+
+#workspaces button.urgent {
+  box-shadow: inset 0 0 0 2 @red;
+}
+
+#tray {
+  border: none;
+  background: transparent;
+}
+
+#network.disconnected {
+  border: none;
+  background-color: @red;
+  color: @mantle;
+}
+
+#wireplumber.sink-muted {
+  border: none;
+  background-color: @flamingo;
+  color: @mantle;
+}
+
+#wireplumber-source.source-muted {
+  border: none;
+  background-color: @flamingo;
+  color: @mantle;
+}
+
+#clock {
+  margin-right: 8;
+}

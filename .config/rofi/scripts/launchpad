@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+dir="$HOME/.config/rofi/widgets"
+
+## Run
+rofi \
+  -show drun \
+  -theme ${dir}/launchpad.rasi
