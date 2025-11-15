@@ -22,7 +22,12 @@ pacman -S stow
 ```
 3. Clone the repository and run stow to create symlinks
 ```bash
+mkdir -p ~/dotfiles
 git clone https://github.com/huberbastian/arch-dotfiles.git ~/dotfiles
 cd ~/dotfiles
 stow .
+```
+or all at once
+```bash
+mkdir -p ~/dotfiles && git clone https://github.com/huberbastian/arch-dotfiles.git ~/dotfiles && cd ~/dotfiles && stow .
 ```
