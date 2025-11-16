@@ -1,0 +1,97 @@
+//     __  ___            __        __
+//    /  |/  /____   ____/ /__  __ / /___   _____
+//   / /|_/ // __ \ / __  // / / // // _ \ / ___/
+//  / /  / // /_/ // /_/ // /_/ // //  __/(__  )
+// /_/  /_/ \____/ \__,_/ \__,_//_/ \___//____/
+
+{
+  "custom/launcher": {
+    "format": " ",
+    "on-click": "~/.config/rofi/scripts/launchpad"
+  },
+
+  "hyprland/window": {
+    "format": " {}",
+    "rewrite": {
+      "(.*) — Mozilla Firefox": "🦊 $1",
+    },
+    "separate-outputs": true,
+    "max-length": 35
+  },
+
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "on-click": "activate",
+  },
+
+  "custom/system": {
+    "format": " ",
+    "tooltip": false
+  },
+
+  "cpu": {
+    "interval": 5,
+    "format": "{usage}%  "
+  },
+
+  "memory": {
+      "interval": 30,
+      "format": "{used}/{total} GiB  ",
+      "max-length": 17
+  },
+
+  "temperature": {
+      "format": "{temperatureC}°C "
+  },
+
+  "group/system": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 300,
+      "children-class": "not-memory",
+      "transition-left-to-right": false
+    },
+    "modules": [
+      "custom/system",
+      "cpu",
+      "memory",
+      "temperature"
+    ]
+  },
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 5
+  },
+
+  "network": {
+    "format-wifi": "{signalStrength}%  ",
+    "format-ethernet":"{ifname}  ",
+    "format-disconnected": " ",
+    "tooltip-format-disconnected": "Dicsonnected",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%) ",
+    "tooltip-format-ethernet": "{ifname}",
+    "on-click": "kitty nmtui"
+  },
+
+  "wireplumber": {
+    "format": "{volume}% {icon}",
+    "format-muted": " ",
+    "on-click": "helvum",
+    "format-icons": ["", " ", " "]
+  },
+
+  "wireplumber#source": {
+    "node-type": "Audio/Source",
+    "format": "{volume}% ",
+    "format-muted": " ",
+    "on-click-right": "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle",
+    "scroll-step": 5,
+  },
+
+  "clock": {
+    "interval": 60,
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%Y-%m-%d}"
+  }
+}

@@ -53,4 +53,5 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
 ## Set Oh-My-Posh promt
-eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/catppuccin.omp.yaml)"
+# eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/catppuccin.omp.yaml)"
+eval "$(starship init zsh)"
