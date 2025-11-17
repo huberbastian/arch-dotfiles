@@ -2,7 +2,7 @@
 
 Hyprland with [Catppuccin](https://catppuccin.com/) colors.
 
-<img width="1918" height="1080" alt="swappy-20251115-223556" src="https://github.com/user-attachments/assets/71d02bdd-f019-4f65-a281-1bbc62b09bb3" />
+<img width="1918" height="1080" alt="swappy-20251117-224728" src="https://github.com/user-attachments/assets/285cd648-ba2f-471e-9c74-f173c7000bff" />
 
 ## Components
 
