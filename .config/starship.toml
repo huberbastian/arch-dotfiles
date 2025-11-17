@@ -1,19 +1,30 @@
+# Get editor completions based on the config schema
 "$schema" = 'https://starship.rs/config-schema.json'
 
+# Don't insert a blank line between shell prompts
 add_newline = false
 
+# Custom format extending the default prompt
+format = "[ ](bold text)$all"
+
+# Sets user-defined palette
+# Palettes must be defined _after_ this line
 palette = "catppuccin_mocha"
 
+# Starship modules
+# Most modules default to colors which are defined in the palette
+# so there is no need to explicitly set the style.
 [character]
-success_symbol = "[➜](green)"
+success_symbol = "[➜](flamingo)"
 error_symbol = "[➜](red)"
 vimcmd_symbol = "[❮](subtext1)"
+
 [git_branch]
-style = "bold mauve"
+style = "bold flamingo"
 
 [directory]
 truncation_length = 4
-style = "bold blue"
+style = "bold mauve"
 format = "[ ]($style)[$path]($style)[$read_only]($read_only_style) "
 
 # Palette definitions

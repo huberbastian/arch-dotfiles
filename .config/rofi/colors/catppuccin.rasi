@@ -1,12 +1,12 @@
  /**
-  * Catppuccin Mocha - Flamingo
+  * Catppuccin Mocha - Mauve
   **/
 
 * {
     background:     #1E1E2EFF;
     background-alt: #313244FF;
     foreground:     #CDD6F4FF;
-    selected:       #F2CDCDFF;
+    selected:       #CBA6F7FF;
     active:         #A6E3A1FF;
     urgent:         #F38BA8FF;
 }
