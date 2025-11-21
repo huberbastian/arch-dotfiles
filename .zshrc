@@ -19,7 +19,7 @@ zinit light zsh-users/zsh-history-substring-search
 bindkey "$terminfo[kcuu1]" history-substring-search-up
 bindkey "$terminfo[kcud1]" history-substring-search-down
 
-## Completions https://github.com/Aloxaf/fzf-tab?tab=readme-ov-file#configure
+## Style completions: https://github.com/Aloxaf/fzf-tab?tab=readme-ov-file#configure
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*:descriptions' format '[%d]'
 zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
@@ -33,13 +33,10 @@ setopt share_history
 
 ## Env Vars
 export EDITOR="nvim"
-#export JAVA_HOME="/opt/homebrew/opt/openjdk"
-#export PNPM_HOME="$HOME/Library/pnpm"
 
+## Path
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
-#export PATH="$JAVA_HOME/bin:$PATH"
-#export PATH="$PNPM_HOME/bin:$PATH"
 
 ## Aliases
 alias pacman="sudo pacman"
@@ -52,6 +49,6 @@ alias la="ls -la --color"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
-## Set Oh-My-Posh promt
-# eval "$(oh-my-posh init zsh --config ~/.config/ohmyposh/catppuccin.omp.yaml)"
+## Starship prompt
+export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"

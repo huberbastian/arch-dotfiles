@@ -12,7 +12,7 @@ Hyprland with [Catppuccin](https://catppuccin.com/) colors.
 | 📊 Status Bar | [Waybar](https://github.com/Alexays/Waybar) |
 | 📟 Terminal | [Kitty](https://github.com/kovidgoyal/kitty) |
 | 🐚 Shell | [Zsh](https://www.zsh.org/) |
-| 🖋️ Prompt | [Starship](https://starship.rs/) ( / [Oh My Posh](https://ohmyposh.dev/)) |
+| 🖋️ Prompt | [Starship](https://starship.rs/) |
 | 📝 Editor | [LazyVim](https://www.lazyvim.org/) |
 | 🚀 Launcher | [Rofi](https://github.com/davatorium/rofi) |
 
