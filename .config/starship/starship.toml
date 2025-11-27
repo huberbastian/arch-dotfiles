@@ -12,17 +12,16 @@ palette = "catppuccin_mocha"
 # Most modules default to colors which are defined in the palette
 # so there is no need to explicitly set the style.
 [character]
-success_symbol = "[➜](flamingo)"
-error_symbol = "[➜](red)"
+success_symbol = "[❯](peach)"
+error_symbol = "[❯](red)"
 vimcmd_symbol = "[❮](subtext1)"
 
 [git_branch]
-style = "bold flamingo"
+style = "bold mauve"
 
 [directory]
 truncation_length = 4
-style = "bold mauve"
-format = "[$path]($style)[$read_only]($read_only_style) "
+style = "bold lavender"
 
 # Palette definitions
 [palettes.catppuccin_latte]

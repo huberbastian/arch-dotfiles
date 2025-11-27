@@ -11,8 +11,8 @@ if status is-interactive
     alias pacman "sudo pacman"
     alias vi nvim
     alias svi "sudo nvim"
-    alias ls "ls --color"
-    alias la "ls -la --color"
+    alias ls "eza --icons=always"
+    alias la "eza -la --icons=always"
 
     # Starship prompt
     set -gx STARSHIP_CONFIG "$HOME/.config/starship/starship.toml"
