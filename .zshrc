@@ -45,10 +45,12 @@ alias svi="sudo nvim"
 alias ls="ls --color"
 alias la="ls -la --color"
 
-## Load nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
 ## Starship prompt
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+
+# Bootsrap fnm
+FNM_PATH="$HOME/.local/share/fnm"
+[ ! -d $FNM_PATH ] && curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
+export PATH="$FNM_PATH:$PATH"
+eval "`fnm env`"
