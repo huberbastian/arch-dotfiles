@@ -11,7 +11,7 @@ configuration {
 @import "~/.config/rofi/colors/catppuccin.rasi"
 
 * {
-    font: "JetBrains Mono Nerd Font 10";
+    font: "JetBrainsMono Nerd Font 10";
 }
 
 /*****----- Main Window -----*****/
