@@ -2,8 +2,6 @@
 
 Hyprland with [Catppuccin](https://catppuccin.com/) colors.
 
-<img width="1918" height="1080" alt="swappy-20251117-224728" src="https://github.com/user-attachments/assets/285cd648-ba2f-471e-9c74-f173c7000bff" />
-
 ## Components
 
 | Category | Software |
@@ -11,14 +9,14 @@ Hyprland with [Catppuccin](https://catppuccin.com/) colors.
 | 🪟 Window Manager | [Hyprland](https://hypr.land/) |
 | 📊 Status Bar | [Waybar](https://github.com/Alexays/Waybar) |
 | 📟 Terminal | [Kitty](https://github.com/kovidgoyal/kitty) |
-| 🐚 Shell | [Zsh](https://www.zsh.org/) |
+| 🐚 Shell | [Zsh](https://www.zsh.org/) / [Fish](https://fishshell.com/) |
 | 🖋️ Prompt | [Starship](https://starship.rs/) |
-| 📝 Editor | [LazyVim](https://www.lazyvim.org/) |
+| 📝 Editor | [Neovim (LazyVim)](https://www.lazyvim.org/) |
 | 🚀 Launcher | [Rofi](https://github.com/davatorium/rofi) |
 
 ## Usage
 
-1. Install GNU Stow with:
+1. Install GNU Stow:
 ```bash
 pacman -S stow
 ```
