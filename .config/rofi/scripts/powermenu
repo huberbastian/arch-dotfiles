@@ -57,7 +57,7 @@ run_cmd() {
       amixer set Master mute
       systemctl suspend
     elif [[ $1 == '--logout' ]]; then
-      killall -9 Hyprland
+      hyprshutdown
     fi
   else
     exit 0
